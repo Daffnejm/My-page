@@ -1,101 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>BABYMONSTER | YG STYLE FAN PAGE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BABYMONSTER | OFFICIAL GLOBAL FAN ARCHIVE</title>
+    
+    <!-- Premium Google Fonts for that sharp K-Pop/YG aesthetic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
-<style>
-body{
-  margin:0;
-  font-family: Arial, sans-serif;
-  background:#0a0a0f;
-  color:white;
-  text-align:center;
-}
+    <style>
+        :root {
+            --yg-black-deep: #050505;
+            --yg-black-card: #0c0c0e;
+            --yg-border: #1a1a1f;
+            --bm-red: #FF003C; /* The official electric Monster Red */
+            --text-primary: #ffffff;
+            --text-secondary: #707076;
+        }
 
-header{
-  background:#000;
-  padding:35px;
-  border-bottom:2px solid #ff4fd8;
-}
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--yg-black-deep);
+            color: var(--text-primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
 
-h1{
-  margin:0;
-  font-size:42px;
-  letter-spacing:3px;
-}
+        /* YG Entertainment Style Industrial Header */
+        header {
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            padding: 90px 20px 50px 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
 
-.logo{
-  color:#ff4fd8;
-  font-weight:bold;
-  letter-spacing:4px;
-  margin-bottom:10px;
-}
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 140px;
+            height: 4px;
+            background: var(--bm-red);
+            box-shadow: 0 0 20px rgba(255, 0, 60, 0.6);
+        }
 
-.section{
-  width:85%;
-  margin:30px auto;
-  padding:20px;
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.1);
-  border-radius:12px;
-}
+        .yg-logo-brand {
+            font-family: 'Syne', sans-serif;
+            font-size: 11px;
+            letter-spacing: 8px;
+            color: var(--text-secondary);
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
 
-a{
-  display:block;
-  margin:12px;
-  font-size:18px;
-  color:#ff4fd8;
-  text-decoration:none;
-}
+        h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: 68px;
+            font-weight: 800;
+            margin: 0;
+            letter-spacing: -2px;
+            text-transform: uppercase;
+            background: linear-gradient(180deg, #ffffff 40%, #505055 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
-a:hover{
-  color:#4fd1ff;
-}
+        .sub-bar {
+            font-size: 13px;
+            color: var(--bm-red);
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-top: 10px;
+            font-weight: 700;
+        }
 
-footer{
-  margin-top:40px;
-  padding:20px;
-  opacity:0.6;
-  font-size:14px;
-}
-</style>
+        /* Main Content Container */
+        .wrapper {
+            width: 100%;
+            max-width: 650px;
+            padding: 0 20px 80px 20px;
+            box-sizing: border-box;
+        }
+
+        .panel {
+            background: var(--yg-black-card);
+            border: 1px solid var(--yg-border);
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 28px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+        }
+
+        h2 {
+            font-family: 'Syne', sans-serif;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-top: 0;
+            margin-bottom: 24px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 14px;
+            background: var(--bm-red);
+        }
+
+        /* High-Energy Premium Link Dashboard */
+        .links-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .official-btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 24px;
+            background: #111114;
+            border: 1px solid #1c1c22;
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .official-btn .platform {
+            color: var(--text-secondary);
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .official-btn:hover {
+            background: #16161c;
+            border-color: var(--bm-red);
+            box-shadow: 0 0 20px rgba(255, 0, 60, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .official-btn:hover .platform {
+            color: var(--bm-red);
+        }
+
+        /* Elite Members Grid with Identity Colors */
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+            gap: 10px;
+        }
+
+        .member-card {
+            background: #111114;
+            border: 1px solid var(--yg-border);
+            padding: 16px 14px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #e4e4e7;
+            transition: all 0.3s ease;
+        }
+
+        /* Subtle representative bottom glows for the members */
+        .member-card.ruka { border-bottom: 3px solid #ff3377; }
+        .member-card.pharita { border-bottom: 3px solid #9955ff; }
+        .member-card.asa { border-bottom: 3px solid #00e5ff; }
+        .member-card.ahyeon { border-bottom: 3px solid #ff1100; }
+        .member-card.rami { border-bottom: 3px solid #ff7700; }
+        .member-card.rora { border-bottom: 3px solid #b0b0b5; }
+        .member-card.chiquita { border-bottom: 3px solid #ffcc00; }
+
+        .member-card:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            background: #15151a;
+            transform: scale(1.03);
+        }
+
+        /* Ultra-Clean Footer with Hidden Developer Signature */
+        footer {
+            width: 100%;
+            max-width: 650px;
+            border-top: 1px solid var(--yg-border);
+            padding: 40px 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            letter-spacing: 2px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+        }
+
+        .copyright {
+            font-weight: 400;
+        }
+
+        /* Sleek Developer Tag - Completely blends in until hovered! */
+        .dev-signature {
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+            color: #2b2b30;
+            letter-spacing: 3px;
+            transition: all 0.3s ease;
+        }
+
+        .dev-signature span {
+            color: #38383d;
+            transition: all 0.3s ease;
+        }
+
+        .dev-signature:hover {
+            color: var(--text-secondary);
+            text-shadow: 0 0 10px rgba(255, 0, 60, 0.3);
+        }
+        
+        .dev-signature:hover span {
+            color: var(--bm-red);
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 48px; }
+            .members-grid { grid-template-columns: repeat(2, 1fr); }
+            footer { flex-direction: column; gap: 15px; text-align: center; }
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-<div class="logo">YG ENTERTAINMENT FAN ARCHIVE</div>
-<h1>BABYMONSTER</h1>
-</header>
+    <header>
+        <div class="yg-logo-brand">YG Entertainment Global Syndicate</div>
+        <h1>Babymonster</h1>
+        <div class="sub-bar">Official Fan Hub & Archive</div>
+    </header>
 
-<div class="section">
-<h2>Official Links</h2>
+    <div class="wrapper">
 
-<a href="https://www.youtube.com/@BABYMONSTER" target="_blank">YouTube</a>
-<a href="https://www.instagram.com/babymonster_ygofficial/" target="_blank">Instagram</a>
-<a href="https://weverse.io/babymonster" target="_blank">Weverse</a>
+        <!-- 100% Verified Official Social Hub -->
+        <div class="panel">
+            <h2>Connect Official</h2>
+            <div class="links-stack">
+                <a href="https://www.youtube.com/@BABYMONSTER" target="_blank" class="official-btn">
+                    <span>YouTube Channel</span>
+                    <span class="platform">Sub Now</span>
+                </a>
+                <a href="https://www.instagram.com/babymonster_ygofficial/" target="_blank" class="official-btn">
+                    <span>Instagram Profile</span>
+                    <span class="platform">Follow</span>
+                </a>
+                <a href="https://weverse.io/babymonster" target="_blank" class="official-btn">
+                    <span>Weverse Community</span>
+                    <span class="platform">Join Fans</span>
+                </a>
+                <a href="https://x.com/ygbabymonster_" target="_blank" class="official-btn">
+                    <span>X Official Feed</span>
+                    <span class="platform">Latest News</span>
+                </a>
+                <a href="https://www.tiktok.com/@babymonster_yg_official" target="_blank" class="official-btn">
+                    <span>TikTok Official</span>
+                    <span class="platform">Watch Trends</span>
+                </a>
+            </div>
+        </div>
 
-</div>
+        <!-- The Elite 7-Member Lineup -->
+        <div class="panel">
+            <h2>The Monster Roster</h2>
+            <div class="members-grid">
+                <div class="member-card ruka">RUKA</div>
+                <div class="member-card pharita">PHARITA</div>
+                <div class="member-card asa">ASA</div>
+                <div class="member-card ahyeon">AHYEON</div>
+                <div class="member-card rami">RAMI</div>
+                <div class="member-card rora">RORA</div>
+                <div class="member-card chiquita">CHIQUITA</div>
+            </div>
+        </div>
 
-<div class="section">
-<h2>Members</h2>
-<p>Ruka · Pharita · Asa · Ahyeon · Rami · Rora · Chiquita</p>
-</div>
+        <!-- High-Octane Discography Hits -->
+        <div class="panel">
+            <h2>Hit Releases</h2>
+            <div class="links-stack">
+                <a href="https://www.youtube.com/watch?v=8nBFqZppIF0" target="_blank" class="official-btn">
+                    <span>DRIP</span>
+                    <span class="platform">Stream Title Track</span>
+                </a>
+                <a href="https://www.youtube.com/watch?v=Zp-Jhuhq0bQ" target="_blank" class="official-btn">
+                    <span>SHEESH</span>
+                    <span class="platform">Watch Official MV</span>
+                </a>
+                <a href="https://www.youtube.com/watch?v=Jm_S-A_yGGo" target="_blank" class="official-btn">
+                    <span>BATTER UP</span>
+                    <span class="platform">Debut MV Hit</span>
+                </a>
+                <a href="https://www.youtube.com/watch?v=2wA_b7a3m_Y" target="_blank" class="official-btn">
+                    <span>FOREVER</span>
+                    <span class="platform">Stream Summer Single</span>
+                </a>
+            </div>
+        </div>
 
-<div class="section">
-<h2>Music</h2>
+    </div>
 
-<a href="https://www.youtube.com/watch?v=Zp-Jhuhq0bQ" target="_blank">SHEESH</a>
-<a href="https://www.youtube.com/watch?v=8nBFqZppIF0" target="_blank">DRIP</a>
-<a href="https://www.youtube.com/watch?v=example" target="_blank">BATTER UP</a>
-
-</div>
-
-<footer>
-Created by Ramy<br>
-YG-style fan project
-</footer>
+    <!-- Corporate Footer with Sleek Developer Integration -->
+    <footer>
+        <div class="copyright">© 2026 YG ENTERTAINMENT INC. ALL RIGHTS RESERVED.</div>
+        <div class="dev-signature">MADE BY: <span>RAMY</span></div>
+    </footer>
 
 </body>
 </html>
